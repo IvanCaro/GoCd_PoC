@@ -1,9 +1,5 @@
 #!/bin/bash
 
-curl -L https://aka.ms/InstallAzureCli | bash
-exec -l $SHELL
-
-
 gitrepo=https://github.com/IvanCaro/GoCd_PoC
 token=a52f577a45c539dac0bb8b66e7ac28417add1aff
 webappname=web-app-bot
