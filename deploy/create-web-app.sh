@@ -2,34 +2,7 @@
 
 
 (
-  set -e
-  echo "Do one thing"
-  apt-get update && apt-get install -y libssl-dev libffi-dev python-dev build-essential
-  echo "Do another thing"
-   	yum install curl
-	apt-get update
-	apt-get install nasm -y
-	apt-get install xorriso -y
-	apt-get install git -y
-	apt-get install vim -y
-	apt-get install -y qemu
-	apt-get install -y curl
 
-  echo "Do yet another thing"
-  echo "And do a last thing"
-)
-[ $? -eq 0 ] && { 
- 	#success, do something
-	exit 1
-} || 
-{ 	
-	#fail, do something
-	exit 1
-}
-
-
-curl -L https://aka.ms/InstallAzureCli | bash
-exec -l $SHELL
 
 gitrepo=https://github.com/IvanCaro/GoCd_PoC
 token=a52f577a45c539dac0bb8b66e7ac28417add1aff
@@ -58,5 +31,16 @@ az appservice web config appsettings update --settings dbuser="<database user>" 
 
 # Browse to the web app.
 az appservice web browse --name $webappname --resource-group $resourceGroup
+
+
+)
+[ $? -eq 0 ] && { 
+ 	#success, do something
+	exit 1
+} || 
+{ 	
+	#fail, do something
+	exit 1
+}
 
 
