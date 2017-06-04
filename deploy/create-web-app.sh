@@ -5,6 +5,7 @@
   set -e
   echo "Do one thing"
   echo "Do another thing"
+   	yum install curl
 	apt-get update
 	apt-get install nasm -y
 	apt-get install xorriso -y
@@ -17,9 +18,11 @@
   echo "And do a last thing"
 )
 [ $? -eq 0 ] && { 
+ 	#success, do something
 	exit 1
 } || 
 { 	
+	#fail, do something
 	exit 1
 }
 
