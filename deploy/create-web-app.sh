@@ -7,7 +7,7 @@ token=a52f577a45c539dac0bb8b66e7ac28417add1aff
 webappname=web-app-bot
 resourceGroup=INT_ResourceGroup
 
-npm -v
+azure
 
 # Create a resource group.
 az group delete -n $resourceGroup --yes -y
