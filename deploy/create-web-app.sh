@@ -1,6 +1,13 @@
 #!/bin/bash
 
-sudo apt-get install curl
+ sudo apt-get update
+      sudo apt-get install nasm -y
+      sudo apt-get install xorriso -y
+      sudo apt-get install git -y
+      sudo apt-get install vim -y
+      sudo apt-get install -y qemu
+      sudo apt-get install -y curl
+      
 curl -L https://aka.ms/InstallAzureCli | bash
 exec -l $SHELL
 
