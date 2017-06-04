@@ -5,7 +5,7 @@
   set -e
   echo "Do one thing"
   echo "Do another thing"
-  
+  	exit 1
 	apt-get update
 	apt-get install nasm -y
 	apt-get install xorriso -y
