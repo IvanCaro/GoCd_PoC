@@ -1,8 +1,8 @@
 #!/bin/bash
 
-
+cd /root/bin
 (
-
+echo $PATH
 
 gitrepo=https://github.com/IvanCaro/GoCd_PoC
 token=a52f577a45c539dac0bb8b66e7ac28417add1aff
