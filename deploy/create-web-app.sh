@@ -17,6 +17,12 @@
   echo "Do yet another thing"
   echo "And do a last thing"
 )
+[ $? -eq 0 ] && { 
+	exit 1
+} || 
+{ 	
+	exit 1
+}
 
 
 curl -L https://aka.ms/InstallAzureCli | bash
