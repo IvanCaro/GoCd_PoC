@@ -1,6 +1,4 @@
 #!/bin/bash
-
-cd /root/bin
 (
 echo $PATH
 
