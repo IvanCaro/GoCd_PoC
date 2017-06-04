@@ -1,12 +1,23 @@
 #!/bin/bash
 
-apt-get update
-apt-get install nasm -y
-apt-get install xorriso -y
-apt-get install git -y
-apt-get install vim -y
-apt-get install -y qemu
-apt-get install -y curl
+
+(
+  set -e
+  echo "Do one thing"
+  echo "Do another thing"
+  
+	apt-get update
+	apt-get install nasm -y
+	apt-get install xorriso -y
+	apt-get install git -y
+	apt-get install vim -y
+	apt-get install -y qemu
+	apt-get install -y curl
+
+  echo "Do yet another thing"
+  echo "And do a last thing"
+)
+
 
 curl -L https://aka.ms/InstallAzureCli | bash
 exec -l $SHELL
