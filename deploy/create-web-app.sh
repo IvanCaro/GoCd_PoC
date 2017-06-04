@@ -4,6 +4,7 @@
 (
   set -e
   echo "Do one thing"
+  apt-get update && apt-get install -y libssl-dev libffi-dev python-dev build-essential
   echo "Do another thing"
    	yum install curl
 	apt-get update
