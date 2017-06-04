@@ -9,8 +9,6 @@ resourceGroup=INT_ResourceGroup
 
 cd /home/go/
 
-azure
-
 # Create a resource group.
 az group delete -n $resourceGroup --yes -y
 
