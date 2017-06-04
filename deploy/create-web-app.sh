@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt-get install curl
+sudo apt-get install curl
 curl -L https://aka.ms/InstallAzureCli | bash
 exec -l $SHELL
 
