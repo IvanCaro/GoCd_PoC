@@ -16,7 +16,7 @@ spec:
       containers:
       # - image: nginxdemos/nginx-ingress:1.0.0
       - image: nginx/nginx-ingress:1.3.0-alpine
-#        imagePullPolicy: Always
+        imagePullPolicy: Always
         name: nginx-ingress
         ports:
         - containerPort: 80
